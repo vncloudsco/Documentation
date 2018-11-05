@@ -54,7 +54,7 @@ Openstack gồm có Block Storage API, Indentify API ... bạn có thể tham kh
 
 Quá trình xác thực: Mỗi một yêu cầu mà gửi đến API đều yêu cầu có X-Auth-Token header. Các máy client sẽ chứa tokens này, sử dụng để gửi  đến các dịch vụ khác. Qúa trình xác thực được thể hiện ở đây: 
 
-<img src=#http://i.imgur.com/iUN45CW.png">
+<img src="http://i.imgur.com/iUN45CW.png">
 
 
 ####  Các bước tiến hành 
