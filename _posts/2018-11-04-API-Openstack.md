@@ -30,7 +30,7 @@ Sử dụng API của Openstack có thể tạo máy ảo, tạo image và các 
 
 Vào web store của chrome, tìm kiếm và cài đặt ứng dụng Advanced RESTclient cho trình duyệt.
 
-<img src=http://i.imgur.com/OCPcBGi.png width="80%" height="80%" border="1">
+<img src=http://i.imgur.com/OCPcBGi.png>
 
 Giao diện của ứng dụng: 
 
