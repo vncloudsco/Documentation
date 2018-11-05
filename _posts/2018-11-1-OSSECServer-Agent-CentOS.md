@@ -1,3 +1,11 @@
+---
+layout: post
+title: "Cài đặt OSSEC Server và Agent trên CentOS"
+tags: Wazuh
+description: Hướng Dẫn Cài Đặt Wazuh
+comments: true
+---
+
 OSSEC là một mã nguồn mở, dựa trên hệ thống phát hiện xâm nhập (HIDS) để thực hiện các hoạt động phân tích, kiểm tra tính toàn vẹn, giám sát đăng ký Windows, phát hiện rootkit, cảnh báo theo thời gian, và phản hồi động. Nó có thể được sử dụng để theo dõi một server hoặc hàng nghìn server trong chế độ server / agent. Bài lab sẽ hướng dẫn các bạn cách cài đặt OSSEC server và agent trên hệ thống CentOS
 
 ## I. Cài đặt OSSEC sever trên CentOS
