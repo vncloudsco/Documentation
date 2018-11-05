@@ -2,7 +2,7 @@
 
 Wazuh là 1 project mã nguồn dùng cho việc bảo vệ an ninh. Được xây dựng từ các thành phần : OSSEC HIDS, OpenSCAP và Elastic Stack.
 
-![wazuh](/images/wazuh-00.png)
+![wazuh](https://raw.githubusercontent.com/vncloudsco/Documentation/master/wazuh/images/wazuh-00.png)
 
  - OSSEC HIDS : host-based Intrusion Detection System (HIDS) được dùng cho việc phát hiện xâm nhập, hiển thị và giám stas. Nó dựa vào 1 multi-platform agent cho việc đẩy dữ liệu hệ thống (log message, file hash và phát hiện bất thường) tới 1 máy quản lý trung tâm, nơi sẽ phân tích và xử lý, dựa trên các cảnh báo an ninh. Các agent truyền event data event data tới máy quản lý trung tâm thông qua kênh được bảo mật và xác thực.
  OSSEC HIDS cung cấp syslog server trung tâm và hệ thống giám sát không cần agent, cung cấp việc giám sát tới các event và thay đổi trên các thiết bị không cài được agent như firewall, switch, router, access point, thiết bị mạng....
@@ -28,7 +28,7 @@ Các agent task hoặc process khác nhau được dùng để giám sát hệ t
 
 Sơ đồ sau thể hiện các internal task và process diễn ra trên các agent level.
 
-![wazuh](/images/wazuh-01.png)
+![wazuh](https://raw.githubusercontent.com/vncloudsco/Documentation/master/wazuh/images/wazuh-01.png)
 
 Tất cả các process agent có mục tiêu và thiết lập khác nhau. 
 
@@ -47,7 +47,7 @@ Chú giải :
 
 Thành phần server phụ trách việc phân tích dữ liệu nhận từ agent, tạo các ngưỡng cảnh báo khi 1 event ánh xạ với rule (phát hiện xâm nhập, thay đổi file, cấu hình không tương thích với policy, rootfit...)
 
-![wazuh](/images/wazuh-02.png)
+![wazuh](https://raw.githubusercontent.com/vncloudsco/Documentation/master/wazuh/images/wazuh-02.png)
 
 Server thông thường chạy các thành phần agent với mục tiêu giám sát chính nó. Một số thành phần server chính là : 
 
