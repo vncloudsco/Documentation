@@ -10,7 +10,7 @@ Cấu hình yêu cầu như sau :
 	
 Mô hình triển khai : 
 
- ![wazuh](/master/wazuh/images/wazuh-23.png)
+ ![wazuh](https://raw.githubusercontent.com/vncloudsco/Documentation/master/wazuh/images/wazuh-24.png)
 
 ### 1. Cài đặt Wazuh server
 
