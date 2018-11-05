@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Hướng Dẫn Sử Dụng Wget"
+tags: Wazuh
+description: Hướng Dẫn Sử Dụng Wget
+comments: true
+
 Bài hướng dẫn này sẽ cho bạn biết cách dùng wget command trong Linux. Chúng tôi cũng cho ví dụ về 12 lệnh wget hữu dụng. Kết quả là bạn sẽ biết toàn bộ cách dùng wget và có thể tải file từ World Wide Web.
 
 Wget Command là gì?
