@@ -6,6 +6,7 @@ description: Làm Việc Với API Openstack
 comments: true
 ---
 
+
 # Giới thiệu 
 
 Khái niệm: Một giao diện lập trình ứng dụng (tiếng anh Application Programming Interface hay API) là một giao diện mà một hệ thống máy tính hay ứng dụng cung cấp để cho phép các yêu cầu dịch vụ có thể được tạo ra từ các chương trình máy tính khác, và hoặc cho phép dữ liệu có thể được trao đổi qua lại giữa chúng. Cũng giống như bàn phím là một thiết bị giao tiếp giữa người dùng và máy tính.
