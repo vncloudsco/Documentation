@@ -118,7 +118,7 @@ Sử dụng Advaned REST Client lấy về danh sách các tenant:
 
 Nếu gửi yêu cầu thành công sẽ nhận được phản hồi như sau: 
 
-<img src=http://i.imgur.com/ghPZPWe.png width="60%" height="60%" border="1">
+<img src="http://i.imgur.com/ghPZPWe.png">
 
 # Sử dụng python và REST client. 
 
