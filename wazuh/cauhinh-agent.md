@@ -73,7 +73,7 @@ azuh-agent-2.0.exe /S
 
  - **Cách 2** : Sử dụng GUI : Double-click vào file dowload và cài đặt với mặc định. Một khi cài đặt xong, agent sẽ có giao diện đồ họa để cấu hình, mở log file hoặc start/stop service :
 
-![wazuh](/images/wazuh-13.png)
+![wazuh](https://raw.githubusercontent.com/vncloudsco/Documentation/master/wazuh/images/wazuh-13.png)
  
 Mặc định tất cả file agent được đặt tại : `C:\Program Files(x86)\ossec-agent`
 
@@ -270,8 +270,8 @@ manage_agents: Exiting.
 ```
 
  - Login vào Wazuh Interface với IP : http://MANAGER_IP:5601 và kiểm tra các agent đã register :
- ![wazuh](/images/wazuh-17.png)
+ ![wazuh](https://raw.githubusercontent.com/vncloudsco/Documentation/master/wazuh/images/wazuh-17.png)
  
- ![wazuh](/images/wazuh-18.png)
+ ![wazuh](https://raw.githubusercontent.com/vncloudsco/Documentation/master/wazuh/images/wazuh-18.png)
  
 
