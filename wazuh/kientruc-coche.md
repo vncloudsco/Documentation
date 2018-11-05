@@ -10,17 +10,17 @@ Mô hình kiến trúc của Wazuh được chia thành 2 dạng :
 Khi Wazuh server và Elasticsearch cluster chạy trên các host khác nhau, Filebeat được dùng để truyền một cách an toàn các cảnh báo, archived event tới Elasticsarch server sử dụng TLS.
 Chú ý rằng multi-node cluster sẽ là multiple Elastic stack sererver.
 
-![wazuh](/images/wazuh-03.png)
+![wazuh](https://raw.githubusercontent.com/vncloudsco/Documentation/master/wazuh/images/wazuh-03.png)
 
 ### Single-node deployment
 
 Wazuh và Elastic stack chạy với 1 single-node Elasticsearch cluster (số lượng agent < 50), có thể triển khai trên một single server. Ở triển khai này, Logstash sẽ đọc các cảnh báo, event từ Wazuh trực tiếp từ local file system và đẩy chúng tới local Elasticsearch instance.
 
-![wazuh](/images/wazuh-04.png)
+![wazuh](https://raw.githubusercontent.com/vncloudsco/Documentation/master/wazuh/images/wazuh-04.png)
 
 ## 2. Phương thức liên lạc và luồng dữ liệu
 
-![wazuh](/images/wazuh-05.png)
+![wazuh](https://raw.githubusercontent.com/vncloudsco/Documentation/master/wazuh/images/wazuh-05.png)
 
 ### 2.1. Agent-server communication
 
