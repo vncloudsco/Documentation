@@ -10,7 +10,7 @@ Cấu hình yêu cầu như sau :
 	
 Mô hình triển khai : 
 
- ![wazuh](/images/wazuh-24.png)
+ ![wazuh](/master/wazuh/images/wazuh-23.png)
 
 ### 1. Cài đặt Wazuh server
 
