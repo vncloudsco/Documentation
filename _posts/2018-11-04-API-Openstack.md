@@ -30,11 +30,11 @@ Sử dụng API của Openstack có thể tạo máy ảo, tạo image và các 
 
 Vào web store của chrome, tìm kiếm và cài đặt ứng dụng Advanced RESTclient cho trình duyệt.
 
-<img src=http://i.imgur.com/OCPcBGi.png>
+<img src="http://i.imgur.com/OCPcBGi.png">
 
 Giao diện của ứng dụng: 
 
-<img src=http://i.imgur.com/sPeLBDt.png width="80%" height="80%" border="1">
+<img src="http://i.imgur.com/sPeLBDt.png">
 
 1. Địa chỉ url
 
@@ -54,7 +54,7 @@ Openstack gồm có Block Storage API, Indentify API ... bạn có thể tham kh
 
 Quá trình xác thực: Mỗi một yêu cầu mà gửi đến API đều yêu cầu có X-Auth-Token header. Các máy client sẽ chứa tokens này, sử dụng để gửi  đến các dịch vụ khác. Qúa trình xác thực được thể hiện ở đây: 
 
-<img src=http://i.imgur.com/iUN45CW.png width="80%" height="80%" border="1">
+<img src=#http://i.imgur.com/iUN45CW.png">
 
 
 ####  Các bước tiến hành 
@@ -63,7 +63,7 @@ Trong phần này mình sẽ demo cách list ra các tenants trong Openstack
 
 B1: Lấy tokens hệ thống
 
-<img src=http://i.imgur.com/YZaPdrJ.png width="80%" height="80%" border="1">
+<img src="http://i.imgur.com/YZaPdrJ.png">
 
 1. URL gồm có địa chỉ của controller, port keystone service và API v2
 2. Yêu cầu sử dụng giao thức POST
@@ -96,7 +96,7 @@ Phản hồi về 400 hoặc 401 HTTP có nghĩa là request sai URL hoặc data
 
 Nếu thành công ta sẽ nhận được tokens của user như hình ảnh dưới đây: 
 
-<img src=http://i.imgur.com/rNsQXkY.png width="80%" height="80%" border="1">
+<img src="http://i.imgur.com/rNsQXkY.png">
 
 B2: List các tenant 
 
@@ -104,11 +104,11 @@ B2: List các tenant
 
 Xem mô tả lại API của list tenants
 
-<img src=http://i.imgur.com/aybKfiN.png width="60%" height="60%" border="1">
+<img src="http://i.imgur.com/aybKfiN.png">
 
 Sử dụng Advaned REST Client lấy về danh sách các tenant:
 
-<img src=http://i.imgur.com/1Qmx6E4.png width="80%" height="80%" border="1">
+<img src="http://i.imgur.com/1Qmx6E4.png">
 
 1. URL (ô số 1) gồm địa chỉ của controller, API v2.0/tenants
 2. List tenant sử dụng phương thức GET
@@ -163,11 +163,11 @@ Hàm thực hiện list các tenant:
  Vào web store của chrome, tìm kiếm và cài ứng dụng Advanced RESTClient về cho trình duyệt
  
  
- <img src=http://i.imgur.com/SE9BloY.png width="90%" height="90%" border="1">
+ <img src="http://i.imgur.com/SE9BloY.png">
 
 Giao diện của ứng dụng như dưới:
 
-<img src=http://i.imgur.com/ACRfcit.png width="90%" height="90%" border="1">
+<img src="http://i.imgur.com/ACRfcit.png">
 
 
 1. Advanced RESTClient hỗ trợ các giao thức GET, POST, PUT, PATCH, DELETE, HEAD
@@ -191,11 +191,11 @@ Khi giao tiếp với bất kỳ thành phần nào trong OpenStack đều cần
 ```sh
 http://developer.openstack.org/api-ref-identity-v2.html
 ```
-<img src=http://i.imgur.com/ysVBi2V.png width="90%" height="90%" border="1">
+<img src="http://i.imgur.com/ysVBi2V.png">
 
 Sử dụng Advanced REST Client lấy token:
 
-<img src=http://i.imgur.com/7Dvl3Fs.png width="90%" height="90%" border="1">
+<img src="http://i.imgur.com/7Dvl3Fs.png">
 
 1. URL( ô số 1) gồm có địa chỉ của controller, port keystone service và API version 2.0
 2. Yêu cầu sử dụng giao thức POST( ô số 2)
@@ -216,7 +216,7 @@ Sử dụng Advanced REST Client lấy token:
 
 Phản hồi về 400 hoặc 401 HTTP có nghĩa là request sai URL hoặc data sai định dạng, phản hồi 200 HTTP là xác thực thành công và trả về file json chứa các thông tin các service của dịch vụ và token của user admin
 
-<img src=http://i.imgur.com/iyv7zjJ.png width="90%" height="90%" border="1">
+<img src="http://i.imgur.com/iyv7zjJ.png">
 
 Ta sẽ lấy token này để xác thực khi sử dụng các dịch vụ khác với các service khác trong OpenStack
 
@@ -226,11 +226,11 @@ Ta sẽ lấy token này để xác thực khi sử dụng các dịch vụ khá
 
 Để xem danh sách tenant trong hệ thống OpenStack ta sử dụng Indenty API. Xem mô tả API:
 
-<img src=http://i.imgur.com/VQdv5SA.png width="90%" height="90%" border="1">
+<img src="http://i.imgur.com/VQdv5SA.png">
 
 Sử dụng Advaned REST Client lấy về danh sách tenant:
 
-<img src=http://i.imgur.com/3ghkscX.png width="90%" height="90%" border="1">
+<img src="http://i.imgur.com/3ghkscX.png">
 
 1. URL (ô số 1) gồm địa chỉ của controller, API v2.0/tenants
 2. GET request( ô số 2)
@@ -273,11 +273,11 @@ name: "invisible_to_admin"
 
 Để xem danh sách role trong hệ thống OpenStack ta sử dụng Indenty API. Xem mô tả API:
 
-<img src=http://i.imgur.com/fMC5yMg.png width="90%" height="90%" border="1">
+<img src="http://i.imgur.com/fMC5yMg.png">
 
 Sử dụng Advaned REST Client lấy về danh sách roles:
 
-<img src=http://i.imgur.com/jKtBurc.png width="90%" height="90%" border="1">
+<img src="http://i.imgur.com/jKtBurc.png">
 
 1. URL (ô số 1) gồm địa chỉ của controller, API v2.0/OS-KSADM/roles
 2. GET request( ô số 2)
