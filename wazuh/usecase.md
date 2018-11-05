@@ -72,7 +72,7 @@ Một số ví dụ trong `/var/ossec/logs/alerts/alerts.json` :
 
 Một khi cảnh báo được tạo bởi manager, các alert được gửi tới Elastic Stack để bổ sung thông tin như Goelocation, được lưu trữ và đánh index. Kibana sau đó được dùng để search, phân tích và hiển thị dữ liệu. Một alert được hiển thị như sau :
 
-![wazuh](/images/wazuh-06.png)
+![wazuh](https://raw.githubusercontent.com/vncloudsco/Documentation/master/wazuh/images/wazuh-06.png)
 
 Wazuh cung cấp ruleset mặc định, update theo định kỳ, với hơn 1600 rule cho các ứng dụng khác nhau.
 
@@ -134,7 +134,7 @@ VD sau là 1 cảnh báo, được tạo khi 1 file được giám sát bị tha
 
 Một ví dụ tổng hợp về sự thay đổi file : 
 
-![wazuh](/images/wazuh-07.png)
+![wazuh](https://raw.githubusercontent.com/vncloudsco/Documentation/master/wazuh/images/wazuh-07.png)
 
 ## 3. Rootkits detection
 
@@ -142,7 +142,7 @@ Wazuh agent định kỳ quét các hệ thống được giám sát để phát
 
 Wazu sử dụng các phương thức khác nhau để tìm kiếm các thay đổi bất thường của hệ thống hoặc các xâm nhập phổ biến. Việc này được thực hiện định kỳ bởi thành phần `Rootcheck` 
 
-![wazuh](/images/wazuh-08.png)
+![wazuh](https://raw.githubusercontent.com/vncloudsco/Documentation/master/wazuh/images/wazuh-08.png)
 
 Dưới đây là ví dụ 1 cảnh báo được tạo khi tìm thấy 1 process ẩn. Ở TH này, hệ thống bị ảnh hưởng chạy trên Linux kernel-level rootkit (name là Diamorphine) :
 ```sh
@@ -264,5 +264,5 @@ SCAP check chạy định kỳ (mặc định là một lần mỗi ngày), và 
 
 Thêm vào, Wazuh WUI có thể dùng để hiển hiện và phân tích policy dựa vào kết quả quét. Ví dụ sau hiển thị dữ liệu của hệ thống Centos khi quét sử dụng `Server baseline` và `PCI DSS v3` pre-defined profiles : 
 
-![wazuh](/images/wazuh-09.png)
+![wazuh](https://raw.githubusercontent.com/vncloudsco/Documentation/master/wazuh/images/wazuh-09.png)
 
