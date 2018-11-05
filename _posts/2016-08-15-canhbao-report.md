@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cài đặt OSSEC Server và Agent trên CentOS"
+title: "Cài đặt Cảnh Báo Và Report Trên Wazuh"
 tags: Wazuh
 description: Hướng Dẫn Cài Đặt Wazuh
 comments: true
