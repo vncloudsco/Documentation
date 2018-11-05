@@ -6,7 +6,7 @@ Với nhu cầu giám sát an ninh và thu thập log tập trung cho hệ thố
 
 Cấu hình yêu cầu như sau :
 
- ![wazuh](/images/wazuh-23.png)
+ ![wazuh](https://raw.githubusercontent.com/vncloudsco/Documentation/master/wazuh/images/wazuh-23.png)
 	
 Mô hình triển khai : 
 
