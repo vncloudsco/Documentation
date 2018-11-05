@@ -332,11 +332,11 @@ Chúng ta sẽ register Wazuh API (đã được install trên Wazuh server) t�
 
  - Mở Web browser và tới Elastic Stack server IP trên port 5601. Tới Wazuh App
  
-![wazuh](/images/wazuh-10.png)
+![wazuh](https://raw.githubusercontent.com/vncloudsco/Documentation/master/wazuh/images/wazuh-10.png)
 
  - Click vào `Add new API`
  
-![wazuh](/images/wazuh-11.png)
+![wazuh](https://raw.githubusercontent.com/vncloudsco/Documentation/master/wazuh/images/wazuh-11.png)
 
  - Trước khi thêm các field, tới Wazuh server và sử dụng cmd với quyền root set thông tin bảo mật cho Wazuh API :
 ```sh
@@ -351,13 +351,13 @@ systemctl restart wazuh-api
 
  - Điền username/password với thông tin thích hợp bạn tạo ở bước trước. Nhập `http://MANAGER_IP`cho URL với `MANAGER_IP` là IP của Wazuh server. Nhập `55000` cho port.
  
-![wazuh](/images/wazuh-12.png)
+![wazuh](https://raw.githubusercontent.com/vncloudsco/Documentation/master/wazuh/images/wazuh-12.png)
 
 Nếu bạn sử dụng Wazuh Documentation cho Nginx, URL phải là `https://localhost`
 
  - Click và `Save`
  
-![wazuh](/images/wazuh-13.png)
+![wazuh](https://raw.githubusercontent.com/vncloudsco/Documentation/master/wazuh/images/wazuh-13.png)
 
 Sau khi cài đặt xong Wazuh server, cấu hình agent và kết nối, tham khảo link [sau](https://github.com/hocchudong/ghichep-SOC/blob/master/ghichep-wazuh/ghichep-cauhinh-agent.md)
  
