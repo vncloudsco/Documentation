@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Cài Đặt Ngưỡng Cảnh Báo Wazuh"
+tags: Wazuh
+description: Hướng Dẫn Cài Đặt Wazuh
+comments: true
+---
 ## Mục lục
 
  - [1. Định nghĩa ngưỡng cảnh báo](#1)
