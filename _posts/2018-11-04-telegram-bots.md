@@ -11,7 +11,6 @@ author: VNC
 
 Bài viết này mình sẽ hướng dẫn các bạn cách tiếp cận với Bot của telegram. Qua đó, có thể giúp những người mới bắt đầu có một cái nhìn rõ hơn về cách sử dụng bot trong telegram  
 
-<a name=khainiem></a>
 ### 1. Khái niệm về Bot
 
 Như mở đầu mình có đề cập tới ``Bot``. Vậy Bot là gì? Được hiểu như thế nào?
@@ -28,7 +27,7 @@ Bạn có thể làm được những gì với `Bot` ???
 
 VD: Thông qua Gmail Bot để gửi mail bằng cách sử dụng command để tương tác:
 
-<img src = "https://github.com/MinhKMA/ghichep-telegram-bot/blob/master/images/bot1.png">
+<img src = "https://i.imgur.com/3xYw3Kc.png">
 
 - Lập trình một trò chơi 
 - ChatBot để tìm kiếm những người bạn nói chuyện dựa trên cùng sở thích hay cùng khu vục hoặc ngẫu nhiên 
@@ -37,7 +36,6 @@ VD: Thông qua Gmail Bot để gửi mail bằng cách sử dụng command để
 
 Mình chỉ lấy một số ngữ cảnh sử dụng để mọi người dễ dàng hình dung còn rất nhiều những điều thú vị để khai thác thêm :)
 
-<a name=hoatdong></a>
 ### 2. Bot hoạt động như thế nào?
 
 Đối với Telegram, Bot là những tài khoản đặc biệt không yêu cầu sử dụng số điện thoại để thiết lập và được sinh ra từ BotFarther. Có hai cách để tương tác với Bot:
@@ -48,7 +46,6 @@ Mình chỉ lấy một số ngữ cảnh sử dụng để mọi người dễ 
 
 Tin nhắn, command hoặc request do người dùng gửi đến được truyền cho phần mềm chạy trên máy chủ của bạn. Máy chủ trung gian xử lý mã hóa và giao tiếp với telegram API cho bạn. Bạn cũng có thể giao tiếp với nó thông qua  HTTPS-interface 
 
-<a name=creatbot></a>
 ### 3. Các bước tạo ra một con Bot
 
 #### Bước 1: Bạn phải có một tài khoản đăng nhập telegram 
@@ -69,7 +66,7 @@ Tin nhắn, command hoặc request do người dùng gửi đến được truy�
 
 - Nhập user name cho Bot. Lưu ý đọc kỹ hướng dẫn để tạo ra một username hợp lệ
 
-<img src ="https://github.com/MinhKMA/ghichep-telegram-bot/blob/master/images/bot2.png">
+<img src ="https://i.imgur.com/zZGqY12.png">
 
 - Sau khi tạo xong bạn sẽ nhận được token để xác thực với con Bot của bạn.
 
@@ -87,7 +84,7 @@ Bạn mở trình duyệt web lên và dán đường link ở dưới vào cùn
 
 Kết quả trả về tùy thuột vào add-on trình duyệt  :
 
-<img src="https://github.com/MinhKMA/ghichep-telegram-bot/blob/master/images/bot3.png">
+<img src="blob:https://imgur.com/b1c71fd6-6802-42fd-8ca5-fd894d9ce023">
 
 Ta sẽ thấy có:
 
@@ -101,7 +98,7 @@ Ta sẽ thấy có:
 
 Sau khi bạn đã nhắn tin cho bot của bạn, đây là phương thức để list ra các thông tin tin nhắn người dùng tương tác với con bot đó.
 
-<img src="https://github.com/MinhKMA/ghichep-telegram-bot/blob/master/images/bot4.png">
+<img src="https://i.imgur.com/dppLh0A.png">
 
 Trong đó: 
 
