@@ -6,8 +6,8 @@ author: Vnclouds
 logo: https://i.imgur.com/JA1DbUr.png
 about: security base
 
-baseurl: "http://docs.vnclouds.co/"
-url: "http://docs.vnclouds.co/"
+baseurl: "https://docs.vnclouds.co/"
+url: "https://docs.vnclouds.co/"
 
 allowsearch: true
 
