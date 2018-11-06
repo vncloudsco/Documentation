@@ -1,4 +1,5 @@
 # Site settings
+highlighter: rouge
 title: "Documentation Security"
 description: Documentation blog
 author: Vnclouds
