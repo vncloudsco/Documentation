@@ -43,8 +43,8 @@ title: VNC Documentation
           <li><a href="/Documentation/">{{ page }}</a></li>
         {% else %}
           <li>
-            <a href="{{ prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-          </li>
+            <a href="{{ site.paginate_path | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>	
+        </li>
         {% endif %}
       {% endfor %}
 
