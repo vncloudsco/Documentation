@@ -84,7 +84,7 @@ Bạn mở trình duyệt web lên và dán đường link ở dưới vào cùn
 
 Kết quả trả về tùy thuột vào add-on trình duyệt  :
 
-<img src="blob:https://imgur.com/b1c71fd6-6802-42fd-8ca5-fd894d9ce023">
+<img src="https://i.imgur.com/Dm1CPiV.png">
 
 Ta sẽ thấy có:
 
@@ -92,7 +92,7 @@ Ta sẽ thấy có:
 - Tên Bot
 - Username Bot
 
-##### getUpdates 
+#### getUpdates 
 
 Đây là method để bạn list ra được thông tin về tin nhắn người dùng tương tác(gửi) cho con Bot đó 
 
