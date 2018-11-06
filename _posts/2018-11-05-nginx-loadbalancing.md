@@ -5,6 +5,8 @@ tags: nginx_loadbalancing
 description: Cấu hình nginx loadbalancing
 comments: true
 author: VNC
+thumbnail: https://i.imgur.com/56wl25y.png
+
 ---
 # Cấu hình nginx loadbalancing .
 
