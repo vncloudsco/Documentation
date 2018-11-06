@@ -26,7 +26,7 @@ title: VNC Documentation
     <ul class="pager">
       {% if paginator.previous_page %}
         <li class="previous">
-          <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a>
+          <a href="{{ paginator.previous_page_path | replace: '//', '/' }}">&laquo;</a>
         </li>
       {% else %}
         <li class="previous disabled"><span aria-hidden="true">&laquo;</span></li>
@@ -43,7 +43,7 @@ title: VNC Documentation
           <li><a href="/Documentation/">{{ page }}</a></li>
         {% else %}
           <li>
-            <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+            <a href="{{ site.paginate_path | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
           </li>
         {% endif %}
       {% endfor %}
@@ -52,7 +52,7 @@ title: VNC Documentation
 
       {% if paginator.next_page %}
         <li class="next">
-          <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a>
+          <a href="{{ paginator.next_page_path | replace: '//', '/' }}">&raquo;</a>
         </li>
       {% else %}
         <li class="next disabled"><span>&raquo;</span></li>
