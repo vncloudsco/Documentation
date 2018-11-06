@@ -2,7 +2,7 @@
 layout: post
 title: "Cấu hình Nginx Failover"
 tags: nginx_loadbalancing
-description: Cấu hình Nginx Failover
+description: Trong quá trình vận hành chúng tôi nhận được rất nhiều yêu cầu từ các khách hàng là thiết kế một hệ thống có độ ổn định cao với chi phí thấp nhất, Hôm nay chúng tôi giới thiệu một giải pháp với nginx tới bạn đọc
 comments: true
 author: VNC
 ---
