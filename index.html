@@ -32,7 +32,7 @@ title: VNC Documentation
         <li class="previous disabled"><span aria-hidden="true">&laquo;</span></li>
       {% endif %}
 
-      <li><a href="/Documentation">First</a></li>
+      <li><a href="/Documentation/">First</a></li>
 
       {% for page in (1..paginator.total_pages) %}
         {% if page == paginator.page %}
@@ -40,15 +40,15 @@ title: VNC Documentation
              <a>{{ page }}<span class="sr-only">(current)</span></a>
           </li>
         {% elsif page == 1 %}
-          <li><a href="/">{{ page }}</a></li>
+          <li><a href="/Documentation/">{{ page }}</a></li>
         {% else %}
           <li>
-            <a href="{{ site.paginate_path | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+            <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
           </li>
         {% endif %}
       {% endfor %}
 
-      <li><a href="/page{{ paginator.total_pages }}/">Last</a></li>
+      <li><a href="/Documentation/page{{ paginator.total_pages }}/">Last</a></li>
 
       {% if paginator.next_page %}
         <li class="next">
