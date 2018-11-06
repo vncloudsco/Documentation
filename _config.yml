@@ -3,11 +3,10 @@ title: "Documentation Security"
 description: Documentation blog
 author: Vnclouds
 logo: https://i.imgur.com/JA1DbUr.png
-github: #
 about: security base
 
 baseurl: "https://beta.vnclouds.co/Documentation"
-url: "https://beta.vnclouds.co/Documentation"
+url: ""
 
 allowsearch: true
 
