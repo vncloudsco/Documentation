@@ -5,8 +5,8 @@ logo: https://i.imgur.com/JA1DbUr.png
 github: #
 about: security base
 
-baseurl: "https://beta.vnclouds.co"
-url: "https://beta.vnclouds.co"
+baseurl: "https://beta.vnclouds.co/Documentation"
+url: "https://beta.vnclouds.co/Documentation"
 
 allowsearch: true
 
@@ -23,7 +23,7 @@ tagarray: []
 
 paginate: 20
 per_page: 20
-paginate_path: "/Documentation/page:num/"
+paginate_path: "/page:num/"
 markdown: kramdown
 gems: [jekyll-paginate, jekyll-gist]
   gems:
