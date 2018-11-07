@@ -20,7 +20,7 @@ author: VNC
 
 ### 1. Cấu hình trên các node trong hệ thống
 
-- Lần lượt cấu hình cho 2 load balancer giống nhau và các node server theo hướng dẫn [tại đây](https://beta.vnclouds.co/Documentation/2018/11/05/Nginx-Multiple-Upstream.html)
+- Lần lượt cấu hình cho 2 load balancer giống nhau và các node server theo hướng dẫn [tại đây](https://docs.vnclouds.co/Nginx-Multiple-Upstream.html)
 
 ###  2. Cài đặt và cấu hình Keep alive
 
