@@ -7,7 +7,6 @@ comments: true
 author: VNC
 ---
 
-## Telegram_Bot
 
 Bài viết này mình sẽ hướng dẫn các bạn cách tiếp cận với Bot của telegram. Qua đó, có thể giúp những người mới bắt đầu có một cái nhìn rõ hơn về cách sử dụng bot trong telegram  
 
