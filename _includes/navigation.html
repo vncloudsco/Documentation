@@ -6,7 +6,6 @@
 	{% if i.url contains '://' %}
 	{% assign linkurl = i.url %}
 	{% else %}
-	{% assign linkurl = i.url | prepend: site.baseurl %}
 	{% endif %}
 	{% assign target = i.target %}
     {% unless target %} {% assign target = '_self' %} {% endunless %}
