@@ -6,6 +6,7 @@ description: Logical Volume Manager (LVM): là phương pháp cho phép ấn đ�
 comments: true
 author: VNC
 thumbnail: https://i.imgur.com/56wl25y.png
+
 ---
 
 
