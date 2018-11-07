@@ -8,7 +8,4 @@ group :jekyll_plugins do
   gem 'kramdown'
   gem 'rouge'
   gem 'jekyll-seo-tag'
-  gem 'jekyll_image_encode'
-  gem 'closure-compiler'
-  gem "mini_magick"
 end
