@@ -8,7 +8,7 @@ author: VNC
 ---
 # Tìm hiểu về Rundeck.
 
-##1. Rundeck là gì?
+1. Rundeck là gì?
 
 - Rundeck là một phần mềm mã nguồn mở giúp bạn tự động hóa các các quy trình hoạt động thường xuyên tại datacenter hoặc 
 môi trường điện toán đám mây. Rundeck cung cấp một số tính năng làm giảm bớt các công việc khó khăn và tốn nhiều thời gian 
@@ -21,15 +21,14 @@ hoặc thực hiện các nhiệm vụ.
 - Rundeck cho phép bạn chạy các nhiệm vụ trên bất kỳ số lượng node từ một giao diện dựa trên  web hoặc một command. Rundeck còn cung cấp 
 thêm các tính năng khác giúp chúng ta có thể dễ dàng mở rộng quy mô tự động hóa bao gồm : Kiểm soát truy cập , xây dựng quy trình làm việc, 
 lập kế hoawjch, thu thập log, và tích hợp các nguồn dữ liệu bên ngoài cho node và các dữ liệu được lựa chọn.
-
-##2. Ai là người làm ra Rundeck ?
+#2. Ai là người làm ra Rundeck ?
 
 - Rundeck được phát triển trên GitHub là một dự án được gọi là [rundeck](https://github.com/rundeck/rundeck) bởi SimplifyOps và cộng đồng Rundeck. Tất cả người dùng mới được 
 hoan nghênh tham gia vào dự án và đóng góp. Vui lòng bỏ phiếu ý tưởng tính năng trên [Trello Ban Rundeck](https://trello.com/b/sn3g9nOr/rundeck-development).
 
 - Rundeck là phần mềm miễn phí và là công khai theo Giấy phép Apache Software.
 
-##3. Các tính năng của Rundeck.
+3. Các tính năng của Rundeck.
 -  Web API
 - Distributed command execution
 - Pluggable execution system (SSH by default)
@@ -41,7 +40,7 @@ hoan nghênh tham gia vào dự án và đóng góp. Vui lòng bỏ phiếu ý t
 - Open integration to external host inventory tools
 - Command line interface tools
 
-##4. Rundeck architecture.
+4. Rundeck architecture.
 
 - Rundeck là một ứng dụng máy chủ bạn lưu trữ trên hệ thống bạn chỉ định một điểm kiểm soát trung tâm . Bên trong, bạn lưu trữ 
 các công việc và lịch sử thực hiện trong một cơ sở dữ liệu quan hệ. Đầu ra từ các command và công việc được thực hiện và lưu 
@@ -57,7 +56,7 @@ kết nối trở lại máy chủ.
 - Các ứng dụng Rundeck chính là một webapp trên nền JAVA . Ứng dụng này cung cấp cả giao diện và mạng lưới gioa diện đồ họa được 
 sử dụng bởi các Rundeck shell tools.
 
-##5. Cài đặt Rundeck.
+5. Cài đặt Rundeck.
 
 - Sau đây là cách cài đặt Rundeck trên Ubuntu server
 
@@ -114,7 +113,7 @@ sudo service rundeckd start
 
 # Tự động triên khai Rundeck bằng Vagrant và Ansible.
 
-##1. Mô hình.
+1. Mô hình.
 ```sh
 |                                               |------ rundeck.yml
 |                             |-------- Ansible |
@@ -124,7 +123,7 @@ sudo service rundeckd start
 |                             |-------- Vagrant => Create VM Ubutuntu 14.04 (26.26.26.26)
 |
 ```
-##2. Thực hiện.
+2. Thực hiện.
 
 - Trước tiên chúng ta cần phải cài đặt `Vagrant` và `ansible` cho máy vật lý.
 
@@ -234,7 +233,6 @@ Vagrant.configure("2") do |config|
 vagrant up
 ```
 
-# OK !!!
 
 - Như thế là chúng ta đã cấu hình để triển khai tự động `Rundeck` bằng Vagrant và Ansible và đây là kết quả :
 
