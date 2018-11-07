@@ -19,11 +19,11 @@ Máy ảo chạy hệ điều hành Ubuntu 14.04 có chế độ LVM cho ổ đ�
 LVM Snapshots are space efficient pointing time copies of lvm volumes. It works only with lvm and consume the space only when changes are made to the source logical volume to snapshot volume. If source volume has a huge changes made to sum of 1GB the same changes will be made to the snapshot volume.
 Snapshots can’t be use for backup option. Backups are Primary Copy of some data’s, so we cant use snapshot as a backup option.
 
-<img src=http://i.imgur.com/w0JRnB5.jpg>
+<img src="https://i.imgur.com/w0JRnB5.jpg">
 
 **Chuẩn bị**
 
-<img src=http://i.imgur.com/2gYdklq.png>
+<img src="https://i.imgur.com/2gYdklq.png">
 
 Trên hình ta đã có một logical Volume lv-demo1 được mount tới thư mục rỗng /mnt/demo1 và Volume Group vg-demo1.
 
@@ -44,7 +44,7 @@ OR
 
 -n: Name for snapshot
 
-<img src=http://i.imgur.com/9X5dcsP.png>
+<img src="https://i.imgur.com/9X5dcsP.png">
 
 Các thành phần câu lệnh:
 ```sh
@@ -57,7 +57,7 @@ lv-demo1-snap: Tên snapshot
 
 Kiểm tra bằng lệnh lvs ta có thêm 1 LV lv-demo1-snap với cột data có % = 0.00
 
-<img src=http://i.imgur.com/lbUNuOh.png>
+<img src="http://i.imgur.com/lbUNuOh.png">
 
 **Nếu muốn xóa snapshot đã tạo**
 
@@ -65,7 +65,7 @@ Kiểm tra bằng lệnh lvs ta có thêm 1 LV lv-demo1-snap với cột data c�
 
 Ta copy một số file vào thư mục /mnt/demo1 
 
-<img src=http://i.imgur.com/Fv7TMdd.png>
+<img src="https://i.imgur.com/Fv7TMdd.png">
 
 Ta có thể thấy 22% dung lượng của snapshot volume đã được dùng. Nếu bạn dùng quá dung lượng thì sẽ có thông báo **Input/output error** khi kiểm tra lvs
 
@@ -79,7 +79,7 @@ Ta có thể thấy 22% dung lượng của snapshot volume đã được dùng.
 
 Vào file /etc/lvm/lvm.conf và chỉnh sửa
 
-<img src=http://i.imgur.com/Zr1E5yT.png>
+<img src="https://i.imgur.com/Zr1E5yT.png">
 
 Dòng 1: Khi dung lượng đạt tới 100%
 Dòng 2: Kích thước volume sẽ tăng 20%
@@ -108,14 +108,14 @@ mount lại Volume và vào thư mục /mnt/demo1. Nếu các file copy đã b�
 
 Tính năng này cho phép chúng ta tạo ra số Volume có tổng dung lượng lớn hơn số lượng cho phép.
 
-<img src=http://i.imgur.com/l60cF0T.jpg>
+<img src="https://i.imgur.com/l60cF0T.jpg">
 
 <a name="2.1"></a>
 **2.1 Setup Thin Pool and Volumes**
 
 Ta có 1 Physical Volume sdd1 dùng lệnh `vgcreate vg-thin /dev/sdd1` để tạo ra 1 Volume group cho Thin-Pool
 
-<img src=http://i.imgur.com/lS0HDr8.jpg>
+<img src="https://i.imgur.com/lS0HDr8.jpg">
 
 **Tạo 1 Thin-Pool**
 
@@ -146,7 +146,7 @@ mount /dev/vg-thin/thin-demo-client1 /mnt/client1
 
 **Copy file vào các thư mục client để dung lượng ổ tăng lên**
 
-<img src=http://i.imgur.com/JrRbRds.jpg>
+<img src="https://i.imgur.com/JrRbRds.jpg">
 
 <a name="2.2"></a>
 **2.2 Over Provisioning**
@@ -156,11 +156,11 @@ Cách giải quyết là dùng chức năng Over Provisioning. (which means givi
 
 **Tạo Thin-demo-client5. Tạo thư mục /mnt/client5. Tạo File System và mount thin-demo-client5.**
 
-<img src=http://i.imgur.com/VkJwUbj.jpg>
+<img src="https://i.imgur.com/VkJwUbj.jpg">
 
 **Copy file vào /mnt/client5**
 
-<img src=http://i.imgur.com/e626ULh.jpg>
+<img src="https://i.imgur.com/e626ULh.jpg">
 
 Phần dung lượng của Client đã tăng lên.
 
@@ -184,13 +184,13 @@ Tính năng của Striping:
 
 Ta tạo 3 Physical volume, mỗi Volume là 1GB
 
-<img src=http://i.imgur.com/31w4EIj.png>
+<img src="https://i.imgur.com/31w4EIj.png">
 
 Tạo Volume Group với tên vg-strip từ 3 Physical volume trên
 
 `vgcreate vg-strip /dev/sd[b-d]1`
 
-<img src=http://i.imgur.com/lNwSyos.png>
+<img src="https://i.imgur.com/lNwSyos.png">
 
 <a name="3.2"></a>
 **3.2 Logical Volume management using Striping I/O**
@@ -208,11 +208,11 @@ Gõ  `lvdisplay vg-strip/lv-strip -m`
 
 ta sẽ thấy được lv-strip sẽ được ghi lên 3 stripe
 
-<img src=http://i.imgur.com/E6NUkJn.png>
+<img src="https://i.imgur.com/E6NUkJn.png">
 
 Phần dung lượng còn lại của sdb1,sbc1,sbd1 sau khi chia cho Thin-Pool
 
-<img src=http://i.imgur.com/xZlRkgq.png>
+<img src="https://i.imgur.com/xZlRkgq.png">
 
 <a name="4"></a>
 ### 4 Tính năng LVM Migration
@@ -224,13 +224,13 @@ Tính năng này cho phép di chuyển dữ liệu từ logical volumes sang m�
 
 Ta có 1 Logical Volume được tạo ra từ Physical Volume /dev/sdb1. Và các Drive /dev/sdc, /dev/sdd mới gắn thêm.
 
-<img src=http://i.imgur.com/tKSZWu6.png>
+<img src="https://i.imgur.com/tKSZWu6.png">
 
 Mount lv-migration tới thư mục /mnt/demo và copy file 123.txt có nội dung bất kì vào thư mục.
 
 Tạo Physical Volume /sdc1 và extend vào vg-migration.
 
-<img src=http://i.imgur.com/myOFW7e.png>
+<img src="https://i.imgur.com/myOFW7e.png">
 
 <a name="4.2"></a>
 **4.2 LVM Mirroring Method**
@@ -244,7 +244,7 @@ Ta dùng 'lvconvert' command  để migration dữ liệu sang ổ mới
 
 Quá trình hoàn tất. Dùng lvs -o+devices để kiểm tra thông tin.
 
-<img src=http://i.imgur.com/nRBD535.png>
+<img src="https://i.imgur.com/nRBD535.png">
 
 Khi đã tạo 1 mirror mới thì bạn có thể bỏ /dev/sdb1
 
@@ -252,7 +252,7 @@ Khi đã tạo 1 mirror mới thì bạn có thể bỏ /dev/sdb1
 
 Check lại với `lvs -o+devices` ta sẽ thấy lv-migration chỉ còn nối với /dev/sdc1
 
-<img src=http://i.imgur.com/LWRZuJ5.png>
+<img src="https://i.imgur.com/LWRZuJ5.png">
 
 Check lại nội dung file 123.txt đã tạo bên trên để đảm bảo dữ liệu ko bị mất.
 
