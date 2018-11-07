@@ -57,7 +57,7 @@ lv-demo1-snap: Tên snapshot
 
 Kiểm tra bằng lệnh lvs ta có thêm 1 LV lv-demo1-snap với cột data có % = 0.00
 
-<img src="http://i.imgur.com/lbUNuOh.png">
+<img src="https://i.imgur.com/lbUNuOh.png">
 
 **Nếu muốn xóa snapshot đã tạo**
 
@@ -131,7 +131,7 @@ vg-thin: Tên Volume Group
 
 `lvcreate -V 2G --thin -n thin-demo-client1 vg-thin/thin-demo` tạo 1 Thin virtual volume với tên **thin-demo-client1** trong **thin-demo**
 
-<img src=http://i.imgur.com/dv9lAEZ.jpg>
+<img src="https://i.imgur.com/dv9lAEZ.jpg">
 
 Ta sẽ tạo 4 Thin-demo-client 1,2,3,4 
 
@@ -202,7 +202,7 @@ Ta tạo Logical volume, Cần xác định giá trị strip, bao nhiêu dữ li
 Ở đây ta tạo Logical volume tên là lv-strip có dung lượng 500M từ Volume Group vg-strip và xác định 3 tripe.
 stripesize có kích thước là 64KB, Nếu muốn giá trị khác ta dùng thêm thành phần -I 
 
-<img src=http://i.imgur.com/62sNtw4.png>
+<img src="https://i.imgur.com/62sNtw4.png">
 
 Gõ  `lvdisplay vg-strip/lv-strip -m`
 
@@ -256,7 +256,7 @@ Check lại với `lvs -o+devices` ta sẽ thấy lv-migration chỉ còn nối 
 
 Check lại nội dung file 123.txt đã tạo bên trên để đảm bảo dữ liệu ko bị mất.
 
-<a name="4.3"></a>
+
 **4.3 LVM pvmove Mirroring Method**
 
 Phần này sẽ hướng dẫn dùng 'pvmove' thay vì 'lvconvert'
