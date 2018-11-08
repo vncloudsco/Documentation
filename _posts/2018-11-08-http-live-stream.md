@@ -16,7 +16,7 @@ HTTP Live Streaming (hay còn được biết đến là HLS) là một cách tr
 
 Nếu stream được chia thành nhiều chất lượng khác nhau (480p, 720p), thì player sẽ tự động lựa chọn chất lượng video tốt nhất để phát dựa theo tình trạng băng thông mạng. Thuật ngữ này là Adaptive Streaming (Thích nghi với điều kiện).
 
-<img src="https://support.jwplayer.com/customer/portal/attachments/238062" />
+<img src="https://support.jwplayer.com/customer/portal/attachments/238062">
 
 =======
 ## HƯỚNG DẪN TẠO STREAM SERVER VÀ CHUYỂN ĐỔI VIDEO THƯỜNG SANG STREAMING
