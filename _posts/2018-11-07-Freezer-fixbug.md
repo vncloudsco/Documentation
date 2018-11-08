@@ -6,7 +6,7 @@ description: Freezer agent không xác thực được với Keystone V3 do file
 comments: true
 author: VNC
 ---
-# 1. Bug Keystone Version
+### 1. Bug Keystone Version
 
 Ở bản stable/mitaka Freezer agent không xác thực được với Keystone V3 do file openstack.py thiếu thông tin user_domain_id và project_domain_id. Hiện tại ở bản master đã code đã fig bug này
 
@@ -124,7 +124,7 @@ class OpenstackOptions:
 
 ```
 
-# 2. Bug Nova Backup
+### 2. Bug Nova Backup
 
 Khi backup VM thì đầu tiên sẽ tạo  bản snapshot của VM, upload image vào Swift và sau đó xóa image đi. Khi freezer tiến hành backup thì gặp bug MemoryError do quá trình dowload image những image dung lượng lớn vào RAM rồi đẩy vào swift. Hiện tại tính đến ngày 27/10/2016 ở cả branch master và stable/mitaka đều dính bug này 
 
@@ -148,7 +148,7 @@ except MemoryError:
 
 Quá trình này sẽ bỏ qua quá trình dowload image vào RAM do tràn bộ nhớ và đẩy trực tiếp xuống Swift.
 
-# 3. Điều chỉnh kích thước từng segment upload lên Swift (Byte), thực hiện trên node client
+### 3. Điều chỉnh kích thước từng segment upload lên Swift (Byte), thực hiện trên node client
 ```
 vim /usr/local/lib/python2.7/dist-packages/freezer/openstack/osclients.py
 
@@ -159,7 +159,7 @@ def download_image(self, image):
 
  ```
 
-# 4. Điều chỉnh kích thước chunk download từ Swift (Byte), thực hiện trên node client
+### 4. Điều chỉnh kích thước chunk download từ Swift (Byte), thực hiện trên node client
 ```
 vim /usr/local/lib/python2.7/dist-packages/freezer/openstack/restore.py
 
@@ -173,7 +173,7 @@ def _create_image(self, path, restore_from_timestamp):
 
 ```
 
-# 5. Backup metadata sau khi thực hiện backup VM
+### 5. Backup metadata sau khi thực hiện backup VM
 
 ```
 freezer-agent --nova-inst-id cfa52799-3d89-4895-92fc-73d0c39f2907 --path-to-backup /root/adminv3.sh --debug --container vm_cr2 --backup-name vm_long_snap --storage swift --log-file /root/logvmha
@@ -182,7 +182,7 @@ freezer-agent --nova-inst-id cfa52799-3d89-4895-92fc-73d0c39f2907 --path-to-back
 Backup metadata received: {"ssh_port": 22, "consistency_checksum": "", "curr_backup_level": 0, "backup_name": "vm_long_snap", "container": "vm_cr2", "compression": "gzip", "dry_run": "", "hostname": "controller", "storage": "swift", "vol_snap_path": "/root/adminv3.sh", "os_auth_version": "", "client_os": "linux2", "time_stamp": 1478349463, "container_segments": "", "ssh_username": "", "path_to_backup": "/root/adminv3.sh", "ssh_key": "", "proxy": "", "always_level": "", "max_level": "", "backup_media": "nova", "ssh_host": "", "mode": "fs", "fs_real_path": "/root/adminv3.sh", "action": "backup", "client_version": "3.0.0", "log_file": "/root/logvmha"}
 ```
 
-# 6. Fix bug không xóa Snapshot Volume sau khi backup volume Snapshot (sử dụng backend Ceph và đặt `rbd_flatten_volume_from_snapshot = false`)
+### 6. Fix bug không xóa Snapshot Volume sau khi backup volume Snapshot (sử dụng backend Ceph và đặt `rbd_flatten_volume_from_snapshot = false`)
 ```
 vim /usr/local/lib/python2.7/dist-packages/freezer/openstack/backup.py
 def backup_cinder_by_glance(self, volume_id):
@@ -196,7 +196,7 @@ def backup_cinder_by_glance(self, volume_id):
     ...
 ```
 
-# 7. Fix bug không xóa VM Snapshot sau khi Backup lên Swift xong 
+### 7. Fix bug không xóa VM Snapshot sau khi Backup lên Swift xong 
 *Nguyên nhân do sử dụng Ceph làm Backend Glance, Glance api v2 không thể xóa image (Image status owner: None), do đó phải dùng Glance api v1 để xóa*
 
 ```
@@ -246,7 +246,7 @@ def backup_cinder_by_glance(self, volume_id):
     ...
 ``` 
 
-# 8. Fix bug không xóa Image sau khi restore volume 
+### 8. Fix bug không xóa Image sau khi restore volume 
 *Chú ý chỉ thực hiện được khi Cinder và Glance không cùng Ceph backend*
 
 ```
@@ -278,7 +278,7 @@ vim /usr/local/lib/python2.7/dist-packages/freezer/openstack/restore.py
 
 ```
 
-# 9. Fix bug không xóa Image sau khi restore VM
+### 9. Fix bug không xóa Image sau khi restore VM
 *Chú ý chỉ thực hiện được khi Nova và Glance không cùng Ceph backend*
 ```
 vim /usr/local/lib/python2.7/dist-packages/freezer/openstack/restore.py
@@ -291,13 +291,13 @@ vim /usr/local/lib/python2.7/dist-packages/freezer/openstack/restore.py
         ...
 
 ```
-# 10. Fix bug không restore from date
+### 10. Fix bug không restore from date
 
 Hiện tại ở bản master tính đến ngày 08/11/2016 khi thực hiện restore theo thời gian ta gặp phải lỗi này
 
 ![](http://image.prntscr.com/image/9d52ac1c998946a6b1ff8e8f4e48b55f.png)
 
-###**CODE**:
+CODE
 ```
 vim /usr/local/lib/python2.7/dist-packages/freezer/storage/base.py
 ```
@@ -309,7 +309,7 @@ vim /usr/local/lib/python2.7/dist-packages/freezer/storage/physical.py
 
 ![](http://image.prntscr.com/image/fddf337bceaf4cfbb2a4113206b76c36.png)
 
-###**FIX BUG**:
+FIX BUG
 
 ```
 vim /usr/local/lib/python2.7/dist-packages/freezer/job.py
@@ -334,7 +334,7 @@ vim /usr/local/lib/python2.7/dist-packages/freezer/openstack/restore.py
 ```
 
 
-# 11. Tổ chức các file trong thư mục backup
+### 11. Tổ chức các file trong thư mục backup
 ![](http://image.prntscr.com/image/e46faeafd28041e2bd28abbb0872b5fb.png)
 Một thư mục backup bao gồm các thư mục con
  - Data: chứa file backup (full và incremental)
@@ -353,7 +353,7 @@ Khôi phục lại một bản backup
 `gzip -d < file.data | tar xvf - `
 
 
-# 12. Fix bug không restore được qua SSH
+### 12. Fix bug không restore được qua SSH
 *Do SFTP đã bị đóng phiên, cần mở phiên mới để lấy metadata từ remote Server về*
 ```
 vim /usr/local/lib/python2.7/dist-packages/freezer/storage/ssh.py
@@ -370,7 +370,7 @@ vim /usr/local/lib/python2.7/dist-packages/freezer/storage/ssh.py
     ...
 ```
 
-# 13. Fix bug khi Backup qua SSH phải tạo thư mục với đường là hostname và tên bản backup trước trên Remote Host (VD: `/root/metadata/tar/zabbix_long_ssh`)
+### 13. Fix bug khi Backup qua SSH phải tạo thư mục với đường là hostname và tên bản backup trước trên Remote Host (VD: `/root/metadata/tar/zabbix_long_ssh`)
 *Thiếu đoạn code khởi tạo path*
 ```
 vim /usr/local/lib/python2.7/dist-packages/freezer/storage/physical.py
@@ -387,7 +387,7 @@ vim /usr/local/lib/python2.7/dist-packages/freezer/storage/physical.py
             pass
 ```
 
-# 14. Freezer sử dụng thư viện paramiko để giao tiếp SFTP với Remote FS, có thể sử dụng thư viện này thông qua ví dụ sau:
+### 14. Freezer sử dụng thư viện paramiko để giao tiếp SFTP với Remote FS, có thể sử dụng thư viện này thông qua ví dụ sau:
 ```
     import paramiko
     hostname = '172.16.69.179'
@@ -400,7 +400,7 @@ vim /usr/local/lib/python2.7/dist-packages/freezer/storage/physical.py
     sftp.mkdir(path)
 ```
 
-# 15. Fix bug backup sử dụng LVM Snapshot không có nội dung ở branch origin/master
+### 15. Fix bug backup sử dụng LVM Snapshot không có nội dung ở branch origin/master
 *Do hàm snapshot_create bị lỗi nên không tạo được LVM Snapshot*
 ```
 vim /usr/local/lib/python2.7/dist-packages/freezer/snapshot/snapshot.py
