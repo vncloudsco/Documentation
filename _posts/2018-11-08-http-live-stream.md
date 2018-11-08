@@ -20,9 +20,6 @@ Nếu stream được chia thành nhiều chất lượng khác nhau (480p, 720p
 
 =======
 ## HƯỚNG DẪN TẠO STREAM SERVER VÀ CHUYỂN ĐỔI VIDEO THƯỜNG SANG STREAMING
->>>>>>> origin/master
-
-Powered by <a href="http://meditech.vn">MediTech,. JSC</a> & <a href="http://longvanidc.vn">LongVanIDC</a>
 
 ## 2. Hướng dẫn tạo server video streaming
 
