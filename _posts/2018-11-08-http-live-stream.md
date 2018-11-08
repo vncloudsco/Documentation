@@ -18,9 +18,6 @@ Nếu stream được chia thành nhiều chất lượng khác nhau (480p, 720p
 
 <img src="https://i.imgur.com/QZqoAGA.png">
 
-=======
-## HƯỚNG DẪN TẠO STREAM SERVER VÀ CHUYỂN ĐỔI VIDEO THƯỜNG SANG STREAMING
-
 ## 2. Hướng dẫn tạo server video streaming
 
 ##### Thông tin về server cài đặt
