@@ -7,12 +7,10 @@ comments: true
 ---
 
 Demo video 
-<video id="video" style="width: 720; height: 600px" controls></video>
 <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 <!-- Or if you want a more recent canary version -->
 <!-- <script src="https://cdn.jsdelivr.net/npm/hls.js@canary"></script> -->
-<video id="video"> </video>
-
+<video id="video" style="width: 720; height: 600px" controls></video>
 <script>
   var video = document.getElementById('video');
   if(Hls.isSupported()) {
