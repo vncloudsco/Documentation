@@ -1,3 +1,10 @@
+---
+layout: post
+title: "demo video play"
+tags: Wazuh
+description: demo video play
+comments: true
+---
 <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 <!-- Or if you want a more recent canary version -->
 <!-- <script src="https://cdn.jsdelivr.net/npm/hls.js@canary"></script> -->
@@ -24,3 +31,4 @@
     });
   }
 </script>
+
