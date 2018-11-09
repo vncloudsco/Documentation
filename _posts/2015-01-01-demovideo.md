@@ -8,4 +8,4 @@
 <script>
 var player = videojs('example-video');
 player.play();
-</script
+</script>
