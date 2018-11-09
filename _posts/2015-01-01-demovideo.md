@@ -12,6 +12,9 @@ Demo video
 <!-- Or if you want a more recent canary version -->
 <!-- <script src="https://cdn.jsdelivr.net/npm/hls.js@canary"></script> -->
 <video id="video"> </video>
+video {
+width: 100%;
+}
 <script>
   var video = document.getElementById('video');
   if(Hls.isSupported()) {
