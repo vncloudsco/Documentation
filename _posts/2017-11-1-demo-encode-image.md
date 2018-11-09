@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cài Dặt Wazuh Sgent"
+title: "demo image"
 tags: Wazuh
 description: Hướng Dẫn Cài Đặt Wazuh
 comments: true
