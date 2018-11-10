@@ -15,7 +15,7 @@ Demo video
   var video = document.getElementById('video');
   if(Hls.isSupported()) {
     var hls = new Hls();
-    hls.loadSource('https://video-dev.github.io/streams/x36xhzz/x36xhzz.m3u8');
+    hls.loadSource('http://video-sys.vnclouds.co/video/066.m3u8');
     hls.attachMedia(video);
     hls.on(Hls.Events.MANIFEST_PARSED,function() {
       video.play();
@@ -27,7 +27,7 @@ Demo video
  // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
  // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
   else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-    video.src = 'https://video-dev.github.io/streams/x36xhzz/x36xhzz.m3u8';
+    video.src = 'http://video-sys.vnclouds.co/video/066.m3u8';
     video.addEventListener('loadedmetadata',function() {
       video.play();
     });
