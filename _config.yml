@@ -6,8 +6,8 @@ author: Vnclouds
 logo: https://i.imgur.com/JA1DbUr.png
 about: security base
 permalink: /:title.html
-baseurl: "https://docs.vnclouds.co"
-url: "https://docs.vnclouds.co"
+baseurl: "https://docs.vnclouds.edu.vn"
+url: "https://docs.vnclouds.edu.vn/"
 
 allowsearch: true
 
